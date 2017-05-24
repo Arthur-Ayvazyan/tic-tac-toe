@@ -20,21 +20,25 @@
     color:#0b0b9a;
     font-size: 20px;
     font-family: 'Architects Daughter', cursive;
+    text-align: center;
 }
 ::-moz-placeholder {
     color:#0b0b9a;
     font-size: 20px;
     font-family: 'Architects Daughter', cursive;
+    text-align: center;
 }
 :-moz-placeholder {
     color:#0b0b9a;
     font-size: 20px;
     font-family: 'Architects Daughter', cursive;
+    text-align: center;
 }
 :-ms-input-placeholder {
     color:#0b0b9a;
     font-size: 20px;
     font-family: 'Architects Daughter', cursive;
+    text-align: center;
 }
 body, html {
     min-width: 320px;
@@ -133,7 +137,6 @@ body, html {
     border-radius: 7px;
     margin: auto;
     font-size: 22px;
-    padding-left: 10px;
     background: none;
     font-family: 'Architects Daughter', cursive;
 }
