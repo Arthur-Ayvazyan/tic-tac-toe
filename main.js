@@ -99,6 +99,7 @@ var num   		= 0,
 			num = 0;
 			winBlock.classList.remove('winAdd');
 			squareBlock.classList.add('x-o');
+			lock.classList.add('unlock');
 			firstStep();
 		};
 	 	var rnd = Math.floor(Math.random() * 9);
@@ -161,8 +162,9 @@ var num   		= 0,
 								win_noWin('o', function(winner){
 									num = 1.5;
 									squareBlock.classList.remove('x-o');
-									lock.classList.add('unlock');
+									
 									setTimeout(function (){
+
 										removeClass();
 										winText.innerHTML = winner + ' is the winner ! ! !';
 										showWinner(winBlock, 'winAdd');
