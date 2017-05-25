@@ -304,7 +304,18 @@ body, html {
     animation-duration: 1.5s;
     opacity: 1;
 }
-
+.offBorderLeft{
+    border-left: transparent;
+}
+.offBorderTop{
+    border-top: transparent;
+}
+.offBorderRight{
+    border-right: transparent;
+}
+.offBorderBottom{
+    border-bottom: transparent;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;

@@ -62,7 +62,29 @@ var num   		= 0,
 				blocks.style.height = blockSize;
 				squareBlock.appendChild(blocks);
 		}
+		
+		for(var i = 1; i <= n; i++){
+			var columnElements = document.querySelectorAll('[data-column="'+i+'"]' );
+			for(var j = 0; j <= columnElements.length-1; j++) {
+				columnElements[j].classList.add('offBorderLeft');
+			}
+		}
 
+		for(var i = 1; i <= n; i++){
+			var rowElements = document.querySelectorAll('[data-row="'+i+'"]' );
+			for(var j = 0; j <= rowElements.length-1; j++) {
+				rowElements[j].classList.add('offBorderTop');
+			}
+		}
+
+		var length = columnElements.length-1;
+		function removeBorder(elem, len, className) {
+			for(var i = len; i !== len - n ; i--) {
+				elem[i].classList.add(className);
+			} 
+		}
+		removeBorder(columnElements, length, 'offBorderRight');
+		removeBorder(rowElements, length, 'offBorderBottom');
 		inputBlock.classList.add('none');
 		
 		setTimeout(function(){
